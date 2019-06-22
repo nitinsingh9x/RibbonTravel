@@ -17,7 +17,13 @@ export class ShareCarPageComponent implements OnInit {
     //todo put next page url here
     this
       .router
-      .navigate(["/sharecar"]);
+      .navigate(["/review"]);
+  }
+
+  navigateToPreviousPage(){
+    this
+      .router
+      .navigate(["/travel"]);
   }
 
 }

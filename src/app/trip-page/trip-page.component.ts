@@ -19,4 +19,10 @@ export class TripPageComponent implements OnInit {
       .navigate(["/travel"]);
   }
 
+  navigateToTripPage(){
+    this
+      .router
+      .navigate(["/"]);
+  }
+
 }

@@ -1,5 +1,5 @@
-<form>
-    <div class="form-inline m-2">
+<form class="main">
+    <div class="form-inline m-1">
       <div class="form-group mb-2 ml-2">
         <div class="form-check">
           <label class="form-check-label" for="exampleRadios1">
@@ -63,6 +63,6 @@
       </div>
   
     </div>
-    
-    <button type="button" (click)="navigateToNextPage()" class="btn btn-primary float-right">Next</button>
+    <button type="button" (click)="navigateToPreviousPage()" class="btn btn-primary float-left ml-2">Previous</button>
+    <button type="button" (click)="navigateToNextPage()" class="btn btn-primary float-right mr-2" >Next</button>
   </form>

@@ -1,66 +1,100 @@
-<form>
-    <div class="form-inline m-2">
-      <div class="form-group mb-2 ml-2">
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-          <label class="form-check-label" for="exampleRadios1">
-            Roundtrip
-          </label>
-        </div>
-      </div>
-      <div class="form-group mx-sm-3 mb-2 ml-2">
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-          <label class="form-check-label" for="exampleRadios1">
-            One-way
-          </label>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <div class="row m-2">
-      <div class="col-md-12">
-        <div class="form-group">
-          <label for="inputAddress">From </label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="">
-        </div>
-      </div>
-      <div class="col-md-12">
-        <div class="form-group">
-          <label for="inputAddress2">To</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="">
-        </div>
-      </div>
-  
-    </div>
-    <div class="form-row m-2">
-      <div class="form-group col-md-6">
-        <label for="inputCity">Depart</label>
-        <input type="text" class="form-control" id="inputDepart">
-      </div>
-      <div class="form-group col-md-6">
-        <label for="inputState">Return</label>
-        <input type="text" class="form-control" id="inputReturn">
-      </div>
-    </div>
-    <div class="form-row m-2">
-        <div class="form-group col-md-6">
-          <label for="inputCity">Travelers</label>
-          <select id="inputState" class="form-control">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
-        </div>
-    </div>
-    <div class="form-group row">
-        <div class="col-sm-12">
-          <div class="form-check">
-            <label class="form-check-label" for="gridCheck1">
-              Use Loyalty Points
-            </label>
-            <input class="form-check-input" style="margin-left: 0.4rem" type="checkbox" id="gridCheck1">
+<div style="overflow: scroll;">
+    <form>
+        <div class="form-inline m-1">
+          <div class="form-group mb-2 ml-2">
+            <div class="form-check">
+              <label class="form-check-label" for="exampleRadios1">
+                Book Flights ->
+              </label>
+            </div>
           </div>
         </div>
-    </div>
-    <button type="button" (click)="navigateToSharingPage()" class="btn btn-primary float-right">Next</button>
-  </form>
+        <hr>
+        <div class="row m-1">
+          <div class="col-md-12">
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="inputAddress">JetBlue</label>
+                    <img style="width: 10%" src="assets/img/jetbluelogo.png">
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-around">
+          <div>Fri Jun 21</div>
+          <div class="active-selected-date">Sat Jun 21</div>
+          <div>Sun Jun 22</div>
+          <div>Mon Jun 24</div>
+        </div>
+        <div>
+          <table style="width:100%">
+            <tr>
+              <th>Departs</th>
+              <th>Arrives</th>
+              <th>Duration</th>
+              <th>Price</th>
+            </tr>
+            <tbody>
+              <tr>
+                <td>05:59 AM JFK 1297 A320</td>
+                <td>08:13 AM -> DEN</td>
+                <td>4h 14m</td>
+                <td>$274</td>
+                <td style="width: 19%">Blue Fare Blue Plus (Look for Hotels)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="form-group row" style="border-bottom: 1px solid lightgrey">
+            <div class="col-sm-12">
+              <div class="form-check">
+                <label class="form-check-label" for="gridCheck1">
+                  Enroll for Asset Sharing
+                </label>
+                <input class="form-check-input" style="margin-left: 0.4rem" type="checkbox" id="gridCheck1">
+              </div>
+            </div>
+        </div>
+        <div class="row m-1">
+            <div class="col-md-12">
+              <div class="form-inline">
+                  <div class="form-group">
+                      <label for="inputAddress">American Airlines</label>
+                    </div>
+              </div>
+            </div>
+          </div>
+        <div>
+            <table>
+              <tr>
+                <th>Departs</th>
+                <th>Arrives</th>
+                <th>Duration</th>
+                <th>Price</th>
+              </tr>
+              <tbody>
+                <tr>
+                  <td>06:29 AM JFK 1297 A320</td>
+                  <td>11:03 AM -> DEN</td>
+                  <td>6h 34m</td>
+                  <td>$277</td>
+                  <td style="width: 19%">Basic Economy Advantage Plus(Look for Hotels)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="form-group row" style="border-bottom: 1px solid lightgrey">
+              <div class="col-sm-12">
+                <div class="form-check">
+                  <label class="form-check-label" for="gridCheck1">
+                    Enroll for Asset Sharing
+                  </label>
+                  <input class="form-check-input" style="margin-left: 0.4rem" type="checkbox" id="gridCheck1">
+                </div>
+              </div>
+          </div>
+        
+        <button type="button" (click)="navigateToTripPage()" class="btn btn-primary float-left ml-2">Previous</button>
+        <button type="button" (click)="navigateToSharingPage()" class="btn btn-primary float-right mr-2">Next</button>
+      </form>
+</div>

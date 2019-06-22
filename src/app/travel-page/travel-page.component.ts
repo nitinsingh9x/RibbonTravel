@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-travel-page',
   templateUrl: './travel-page.component.html',
-  styleUrls: ['./travel-page.component.sass']
+  styleUrls: ['./travel-page.component.scss']
 })
 export class TravelPageComponent implements OnInit {
 
@@ -17,6 +17,12 @@ export class TravelPageComponent implements OnInit {
     this
       .router
       .navigate(["/sharecar"]);
+  }
+
+  navigateToTripPage(){
+    this
+      .router
+      .navigate(["/trip"]);
   }
 
 }

@@ -11,6 +11,9 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { TripPageComponent } from './trip-page/trip-page.component';
 import { TravelPageComponent } from './travel-page/travel-page.component';
 import { ShareCarPageComponent } from './share-car-page/share-car-page.component';
+import { ReviewPageComponent } from './review-page/review-page.component';
+import { ItenatoryConfirmationComponent } from './itenatory-confirmation/itenatory-confirmation.component';
+import { DetailPopupComponent } from './detail-popup/detail-popup.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { ShareCarPageComponent } from './share-car-page/share-car-page.component
     HomePageComponent,
     TripPageComponent,
     TravelPageComponent,
-    ShareCarPageComponent
+    ShareCarPageComponent,
+    ReviewPageComponent,
+    ItenatoryConfirmationComponent,
+    DetailPopupComponent
   ],
   imports: [
     RouterModule,
