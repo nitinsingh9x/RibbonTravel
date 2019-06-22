@@ -4,6 +4,14 @@
   justify-items: center;
 }
 
+.hover-grow:hover img{
+  width: 3.5rem;
+}
+
+.hover-grow img{
+  width: 3rem;
+}
+
 .outer {
   align-items: stretch;
   display: flex;
