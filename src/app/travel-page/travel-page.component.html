@@ -1,3 +1,66 @@
-<p>
-  travel-page works!
-</p>
+<form>
+    <div class="form-inline m-2">
+      <div class="form-group mb-2 ml-2">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            Roundtrip
+          </label>
+        </div>
+      </div>
+      <div class="form-group mx-sm-3 mb-2 ml-2">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            One-way
+          </label>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row m-2">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="inputAddress">From </label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="">
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="inputAddress2">To</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="">
+        </div>
+      </div>
+  
+    </div>
+    <div class="form-row m-2">
+      <div class="form-group col-md-6">
+        <label for="inputCity">Depart</label>
+        <input type="text" class="form-control" id="inputDepart">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputState">Return</label>
+        <input type="text" class="form-control" id="inputReturn">
+      </div>
+    </div>
+    <div class="form-row m-2">
+        <div class="form-group col-md-6">
+          <label for="inputCity">Travelers</label>
+          <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-12">
+          <div class="form-check">
+            <label class="form-check-label" for="gridCheck1">
+              Use Loyalty Points
+            </label>
+            <input class="form-check-input" style="margin-left: 0.4rem" type="checkbox" id="gridCheck1">
+          </div>
+        </div>
+    </div>
+    <button type="button" (click)="navigateToSharingPage()" class="btn btn-primary float-right">Next</button>
+  </form>

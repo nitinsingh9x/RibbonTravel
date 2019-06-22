@@ -1,3 +1,68 @@
-<p>
-  share-car-page works!
-</p>
+<form>
+    <div class="form-inline m-2">
+      <div class="form-group mb-2 ml-2">
+        <div class="form-check">
+          <label class="form-check-label" for="exampleRadios1">
+            Share your car
+          </label>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="form-row m-2">
+        <div class="form-group col-md-6">
+          <label for="inputCity">Car's Make</label>
+          <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>Nissan Versa</option>
+              <option>Mitsubishi Mirage</option>
+              <option>Kiak</option>
+              <option>Ford Fiesta Sedan</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-row m-2">
+        <div class="form-group col-md-6">
+          <label for="inputCity">Car's Model</label>
+          <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>Economy</option>
+              <option>Compact</option>
+              <option>Standard</option>
+              <option>Full Size</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-row m-2">
+        <div class="form-inline col-md-6">
+          <label for="inputCity">No. of Seats</label>
+          <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+            </select>
+        </div>
+    </div>
+    <div class="row m-2">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="inputAddress">Place for pickup </label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="">
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="inputAddress2">Place for drop</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="">
+        </div>
+      </div>
+  
+    </div>
+    
+    <button type="button" (click)="navigateToTravelPage()" class="btn btn-primary float-right">Next</button>
+  </form>
