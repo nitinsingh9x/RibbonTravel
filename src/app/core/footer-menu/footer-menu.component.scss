@@ -1,15 +1,32 @@
-.app-flex-center{
-    display: flex;
-    align-items: center;
-    justify-items: center;
+.app-flex-center {
+  display: flex;
+  align-items: center;
+  justify-items: center;
 }
 
 .outer {
-    align-items: stretch;
-    display: flex;
+  align-items: stretch;
+  display: flex;
 }
 
 .inner {
-    align-items: center;
+  align-items: center;
+  display: flex;
+}
+
+.menu-dot-container {
     display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+
+  .menu-dot {
+    background-color: orange;
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    margin: 2px;
+  }
 }
