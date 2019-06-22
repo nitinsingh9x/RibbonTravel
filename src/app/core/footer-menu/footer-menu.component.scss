@@ -1,0 +1,15 @@
+.app-flex-center{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.outer {
+    align-items: stretch;
+    display: flex;
+}
+
+.inner {
+    align-items: center;
+    display: flex;
+}
